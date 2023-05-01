@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 
+            # = id
+            . = class
+            : = pseudo-classes
+            :: = pseudo-elementos
+            > = children
+        */
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+                a{
+            color: red;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        a::after {
+            content: "»";
+        }
+        a:visited {
+            color: darkblue;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .link:hover{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: blueviolet;
+        }
+        
+
+    </style>
+    <title>Links</title>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://twitter.com/Corinthians" class="link">Twitter</a></li>
+        <li><a href="https://www.youtube.com/c/corinthians">Canal do youtube</a></li>
+        <li><a href="https://www.instagram.com/corinthians/">instagram</a></li>
+    </ul>
+</body>
+</html>

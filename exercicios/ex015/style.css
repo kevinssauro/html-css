@@ -1,0 +1,11 @@
+@charset "UTF-8";
+body{background-color: grey;
+    font-family: roboto;
+    font-size: 20px;}
+h1{color: azure;
+    font-size: 2em;}
+h2{color: cornflowerblue;
+    font-size: 1.5em;}
+p{color: gold;
+    font-size: 1em;
+    text-align: justify;}
