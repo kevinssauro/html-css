@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/* todas as demais midias */
+
+/* Tipical device breakpoints 
+pequenas telas: até 600px
+celular: min 600px
+tablet: min 768px
+desktop: min 992px
+grandes telas: min 1200px
+*/
+@media print {
+    *{
+        font-family: 'courier new', courier, monospace;
+    }
+
+    body{
+        background-image: url('../imagens/back-print.jpg'); /* desnecessário pois não aparece na impressão */
+    }
+
+    main{
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after {
+        content: 'essa impressaõ foi feita atraves do cursoemvideo.com por kevin';
+        text-decoration: overline;
+    }
+
+
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#print{
+        display: block;
+    }
+    img#pc{
+        display: none;
+    }
+    img#tv{
+        display: none;
+    }    
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* tablet */
+    body{
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: block;
+    }
+    img#print{
+        display: none;
+    }
+    img#pc{
+        display: none;
+    }
+    img#tv{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* desktop */
+    body{
+        background-image: url('../imagens/back-pc.jpg');
+    }
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#print{
+        display: none;
+    }
+    img#pc{
+        display: block;
+    }
+    img#tv{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) { /* grandes telas */
+    body{
+        background-image: url('../imagens/back-tv.jpg');
+    }
+
+    main{
+        width: 1100px;
+    }
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#print{
+        display: none;
+    }
+    img#pc{
+        display: none;
+    }
+    img#tv{
+        display: block;
+    }    
+}
